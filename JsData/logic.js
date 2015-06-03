@@ -24,11 +24,18 @@ function Dim(x, y, w, h){
 		return new Dim (x, y, w, h) ;
 	}
 	
-	this.x = x;
-	this.y = y;
+	this.check = function (n) {
+		if (n < 1) {
+			return 1;
+		}
+		
+		return n;
+	}
+	
+	this.x = this.check(x);
+	this.y = this.check(y);
 	this.w = w;
 	this.h = h;
-	
 }
 
 function Armor() {

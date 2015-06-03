@@ -397,5 +397,13 @@ TestCase("LakeInvaders", {
     	assertTrue(dim.y != undefined);
     	assertTrue(dim.w != undefined);
     	assertTrue(dim.h != undefined);
-    } 
+    },
+    "test does dimensions checkDimensions exist": function () {
+    	assertTrue(dim.check != undefined);
+    },
+    "test does dimensions check set the Dimensions to a Default value if not valid": function () {
+    	dim = new Dim(-1, -1, 10, 10);
+    	
+    	assertTrue(dim.x > 0);
+    }
 });
