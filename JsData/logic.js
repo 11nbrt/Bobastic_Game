@@ -14,8 +14,8 @@ function World(name, width, height) {
 	this.pvp = true;
 	this.pve = true;
 	
-	this.add_______Player = function (player) {
-		players.push(player); // how TO?
+	this.addPlayer = function (player) {
+		players.push(player);
 	};
 }
 

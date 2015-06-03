@@ -405,5 +405,6 @@ TestCase("LakeInvaders", {
     	dim = new Dim(-1, -1, 10, 10);
     	
     	assertTrue(dim.x > 0);
+    	assertTrue(dim.y > 0);
     }
 });
